@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acara 2 | Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        main {
+            margin-top: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top bg-light" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kabupaten Bogor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="bi bi-house-fill"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deskripsi">
+                                <i class="bi bi-list-columns-reverse"></i> Deskripsi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#penduduk">
+                                <i class="bi bi-people-fill"></i> Penduduk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kecamatan">
+                                <i class="bi bi-map-fill"></i> Kecamatan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sumber">
+                                <i class="bi bi-box-arrow-up-left"></i> Sumber</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gambar">
+                                <i class="bi bi-image"></i> Gambar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" 
+                                data-bs-target="#infoModal">
+                                <i class="bi bi-info-circle"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <div class="alert alert-success text-center" role="alert">
+            <h4> Kabupaten Bogor</h4>
+            <h5> Jawa Barat</h5>
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="card mb-4">
+            <div class="card-header d-flex align-items-center gap-2" id="deskripsi">
+                <i class="bi bi-list-columns-reverse fs-5"></i>
+                <h5 class="mb-0">Deskripsi</h5>
+            </div>
+            <div class="card-body">
+                <p>Kabupaten Bogor (bahasa Sunda: ᮊᮘᮥᮕᮒᮦᮔ᮪ ᮘᮧᮌᮧᮁ) adalah sebuah wilayah kabupaten yang terletak di
+                    bagian barat hingga ujung barat Provinsi Jawa Barat, Indonesia. Ibu kota kabupaten ini terletak di
+                    Kecamatan
+                    Cibinong.
+                </p>
+
+                <p>Kabupaten Bogor terdiri atas 40 kecamatan, yang dibagi atas sejumlah desa dan kelurahan. Pusat
+                    pemerintahan Kabupaten Bogor terletak di Kecamatan Cibinong, yang berada di sebelah utara Kota Bogor
+                    dan tepat di
+                    sebelah selatan Kota Depok bagian timur, khususnya Kecamatan Cilodong dan Kecamatan Tapos. Dengan
+                    jumlah
+                    penduduk sebesar 5.682.303 jiwa, Kabupaten Bogor merupakan kabupaten dengan jumlah penduduk
+                    tertinggi di Indonesia, meskipun
+                    berstatus wilayah penyangga Jakarta Raya, seperti Kabupaten Bekasi dan Kabupaten Tangerang.
+                </p>
+
+                <p>Perjalanan sejarah Kabupaten Bogor memiliki keterkaitan yang erat dengan zaman kerajaan yang pernah
+                    memerintah di wilayah tersebut. Pada 4 abad sebelumnya, Sri Baduga Maharaja dikenal sebagai raja
+                    yang mengawali zaman Kerajaan Pajajaran, raja tersebut terkenal dengan ajaran dari leluhur yang
+                    dijunjung tinggi yang mengejar kesejahteraan.
+                </p>
+            </div>
+        </div>
+
+        <!-- Penduduk -->
+        <div class="card mb-4">
+            <div class="card-header d-flex align-items-center gap-2" id="penduduk">
+                <i class="bi bi-people-fill fs-5"></i>
+                <h5 class="mb-0">Penduduk</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Laki-laki</td>
+                            <td>2.912.658</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Perempuan</td>
+                            <td>2.769.645</td>
+                        </tr>
+                        <tr class="fw-bold">
+                            <td>3</td>
+                            <td>Total</td>
+                            <td>5.682.303</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        </div.card>
+        </div>
+
+        <!-- Kecamatan -->
+        <div class="card mt-4">
+            <div class="card-header d-flex align-items-center gap-2" id="kecamatan">
+                <i class="bi bi-map-fill"></i>
+                <h5 class="mb-0">Kecamatan</h5>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li> Babakan Madang</li>
+                    <li> Bojonggede</li>
+                    <li> Cariu</li>
+                    <li> Ciampea</li>
+                    <li> Cibinong</li>
+                    <li> Cisarua</li>
+                    <li> Citeureup</li>
+                </ol>
+            </div>
+        </div>
+
+        </div.card>
+        </div>
+
+        <!-- Sumber -->
+        <div class="card mt-4">
+            <div class="card-header d-flex align-items-center gap-2" id="sumber">
+                <i class="bi bi-box-arrow-up-left"></i>
+                <h5 class="mb-0">Sumber</h5>
+            </div>
+            <div class="card-body">
+                <a href="https://id.wikipedia.org/wiki/Kabupaten_Bogor" target="_blank"
+                    rel="noopener noreferrer">Wikipedia</a>
+
+            </div>
+        </div>
+
+        </div.card>
+        </div>
+
+        <!-- Gambar -->
+        <div class="card mt-4">
+            <div class="card-header d-flex align-items-center gap-2" id="gambar">
+                <i class="bi bi-image"></i>
+                <h5 class="mb-0">Gambar</h5>
+            </div>
+            <div class="card-body">
+                <img src="Gunung Salak.jpg" width="300">
+                <hr>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0SXYhKhuhYQ?si=UwHvrwIgZaR-S5cw"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div.card>
+            </div>
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Info</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td>Nama </td>
+                            <td> : </td>
+                            <td>Indah Cahya Novianti</td>
+                        </tr>
+                        <tr>
+                            <td>NIM </td>
+                            <td> : </td>
+                            <td>25/565798/SV/26994</td>
+                        </tr>
+                        <tr>
+                            <td> Kelas </td>
+                            <td> : </td>
+                            <td> A </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
